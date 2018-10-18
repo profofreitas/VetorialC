@@ -1,3 +1,4 @@
+
 /**
  * Vector Interface
  * 
@@ -20,9 +21,6 @@ class Vector {
                 /**
                  * Private members 
                  */
-                double x_coordinate;
-                double y_coordinate;
-                double z_coordinate;
-
+                double coordinates[3];
                 double magnitude;
 }
