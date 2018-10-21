@@ -6,7 +6,33 @@ using std::endl;
 
 int main()
 {
-    Vector v(2.0, 3.0, 0.0);
-    cout << "Coordenada x: " << v.getX() << endl;
+    /** Tests
+     *  
+     **/
+
+    /** createAVectorTest
+     * 
+     */
+    Vector v(2.0, 3.0, 1.0);
+
+    /** getXCoordinateTest
+     * 
+     */
+    cout << "Coordenada x: " << v.getX() << "\n" << endl;
+
+    /** getYCoordinateTest
+     * 
+     */
+    cout << "Coordenada y: " << v.getY() << "\n" << endl;
+    
+    /** getZCoordinateTest
+     * 
+     */
+    cout << "Coordenada z: " << v.getZ() << "\n" << endl;
+
+    /** getMagnitudeTest
+     * 
+     */
+    cout << "Magnitude of v: " << v.getMagnitude() << "\n" << endl;
     return 0;
 }

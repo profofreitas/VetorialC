@@ -11,6 +11,10 @@ class Vector {
                 Vector normalized();
                 void setX(double);
                 double getX();
+                void setY(double);
+                double getY();
+                void setZ(double);
+                double getZ();
 
         private:
                 double coordinates[3];
