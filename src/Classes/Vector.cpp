@@ -7,7 +7,7 @@
  *  Implement normalized method;
  */
 #include <cmath>
-#include "../interfaces/Vector.h"
+#include "../Interfaces/Vector.h"
 
 /** Constructor Vector()
  * 
