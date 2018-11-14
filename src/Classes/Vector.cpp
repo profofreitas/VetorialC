@@ -71,12 +71,8 @@ double Vector::getZ()
  *  @return double
  */
 double Vector::getMagnitude()
-{
-    double x = pow(getX(), 2);
-    double y = pow(getY(), 2);
-    double z = pow(getZ(), 2);
-    
-    return sqrt( pow(getX(), 2) + pow(getY(), 2) + z );
+{   
+    return sqrt( pow(getX(), 2) + pow(getY(), 2) + pow(getZ(), 2) );
 }
 
 /** normalized method
