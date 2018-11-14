@@ -34,5 +34,7 @@ int main()
      * 
      */
     cout << "Magnitude of v: " << v.getMagnitude() << "\n" << endl;
+    Vector u = v.normalized();
+    cout << "Normalized u: " << u.getMagnitude() << endl;
     return 0;
 }

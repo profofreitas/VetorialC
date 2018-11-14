@@ -81,6 +81,13 @@ double Vector::getMagnitude()
  */
 Vector Vector::normalized()
 {
-    Vector v(1.0, 1.0, 0.0);
+    double magnitude = this->getMagnitude();
+    
+    double x = this->getX()/magnitude;
+    double y = this->getY()/magnitude;
+    double z = this->getZ()/magnitude;
+
+    Vector v( x, y, z );
+    
     return v;
 }
