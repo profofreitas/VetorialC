@@ -1,4 +1,7 @@
 #include <iostream>
+#include <fstream>
+#include <iostream>
+using namespace std;
 using std::cout;
 using std::endl;
 
@@ -15,26 +18,33 @@ int main()
      */
     Vector v(2.0, 3.0, 1.0);
 
-    /** getXCoordinateTest
+    /**
+     * @todo add vector manager to sum, subtract, multiply, etc
      * 
+     * Talvez criar um VetorCollection
      */
-    cout << "Coordenada x: " << v.getX() << "\n" << endl;
+    ofstream outfile;
+    outfile.open("vetor2d.p");
 
-    /** getYCoordinateTest
+    outfile << "set arrow 1 from 0,0 to 0.5,0.5 \n";
+    outfile << "set arrow 2 from 0,0 to 1.5,0.5 \n";
+    outfile << "set xr[0.0:10.0] \n";
+    outfile << "set xr[0.0:10.0] \n";
+    outfile << "f(x) = 0 \n";
+    outfile << "plot f(x)";
+    outfile.close();
+
+    /**
+     * @todo write a plot file.
      * 
+     * Plotter aceita um VetorCollection
      */
-    cout << "Coordenada y: " << v.getY() << "\n" << endl;
+
+    /**
+     *
+     *
+     */
+    system("gnuplot \'vetor2d.p\' -persist");
     
-    /** getZCoordinateTest
-     * 
-     */
-    cout << "Coordenada z: " << v.getZ() << "\n" << endl;
-
-    /** getMagnitudeTest
-     * 
-     */
-    cout << "Magnitude of v: " << v.getMagnitude() << "\n" << endl;
-    Vector u = v.normalized();
-    cout << "Normalized u: " << u.getMagnitude() << endl;
     return 0;
 }
