@@ -5,7 +5,7 @@ using namespace std;
 using std::cout;
 using std::endl;
 
-#include "src/Interfaces/Vector.h"
+#include "src/Classes/VetorialC/src/Interfaces/Vector.h"
 
 int main()
 {
